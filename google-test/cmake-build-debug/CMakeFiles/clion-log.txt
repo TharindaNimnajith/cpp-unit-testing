@@ -1,0 +1,23 @@
+"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\cpp-unit-testing\google-test
+-- Configuring done
+CMake Error at CMakeLists.txt:17 (add_library):
+  Cannot find source file:
+
+    Example.hpp
+
+
+CMake Error at test/CMakeLists.txt:9 (add_executable):
+  Cannot find source file:
+
+    Example.cpp
+
+
+CMake Error at CMakeLists.txt:17 (add_library):
+  No SOURCES given to target: cpp-unit-testing
+
+
+CMake Error at test/CMakeLists.txt:9 (add_executable):
+  No SOURCES given to target: ExampleTests
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

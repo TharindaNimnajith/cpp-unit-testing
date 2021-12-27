@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION "3.22.1")
+cmake_minimum_required(VERSION "3.21.1")
 
 project("cpp-unit-testing" C CXX)
 
@@ -10,13 +10,9 @@ enable_testing()
 
 add_subdirectory(googletest)
 
-set(Headers
-    Example.hpp
-)
+set(Headers Example.hpp)
 
-set(Sources
-    Example.cpp
-)
+set(Sources Example.cpp)
 
 add_library("${PROJECT_NAME}" STATIC ${Sources} ${Headers})
 

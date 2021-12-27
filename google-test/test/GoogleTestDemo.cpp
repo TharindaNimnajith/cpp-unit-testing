@@ -22,13 +22,14 @@ struct BankAccount {
     }
 };
 
-TEST(AccountTest, BankAccountStartsEmpty) {
-    BankAccount account;
-    EXPECT_EQ(0, account.balance);
+TEST(AccountTest, BankAccountStartsEmpty
+) {
+BankAccount account;
+EXPECT_EQ(0, account.balance);
 }
 
 struct BankAccountTest : testing::Test {
-    BankAccount* account;
+    BankAccount *account;
 
     BankAccountTest() {
         account = new BankAccount;
@@ -39,13 +40,14 @@ struct BankAccountTest : testing::Test {
     }
 };
 
-TEST_F(BankAccountTest, CanDepositMoney) {
-    account->deposit(100);
-    EXPECT_EQ(100, account->balance);
+TEST_F(BankAccountTest, CanDepositMoney
+) {
+account->deposit(100);
+EXPECT_EQ(100, account->balance);
 }
 
 struct account_state {
-    int initial_balace;
+    int initial_balance;
     int withdraw_amount;
     int final_balance;
     bool success;
@@ -57,18 +59,21 @@ struct WithdrawAccountTest : BankAccountTest, testing::WithParamInterface<accoun
     }
 };
 
-TEST_P(WithdrawAccountTest, FinalBalance) {
-    auto as = GetParam();
-    auto success = account->withdraw(as.withdraw_amount);
-    EXPECT_EQ(as.final_balance, account->balance);
-    EXPECT_EQ(as.success, success);
+TEST_P(WithdrawAccountTest, FinalBalance
+) {
+auto as = GetParam();
+auto success = account->withdraw(as.withdraw_amount);
+EXPECT_EQ(as
+.final_balance, account->balance);
+EXPECT_EQ(as
+.success, success);
 }
 
 INSTANTIATE_TEST_CASE_P(Default, WithdrawAccountTest,
-    testing::Values(
-        account_state {100, 50, 50, true},
-        account_state {100, 200, 100, false}
-    )
+        testing::Values(
+        account_state{100, 50, 50, true},
+        account_state{100, 200, 100, false}
+)
 );
 
 int main() {
