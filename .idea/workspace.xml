@@ -9,11 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aaa5846-3604-4a9c-a5b0-50874d5a9e91" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/google-test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/google-test/CMakeLists.txt" afterDir="false" />
+    <list default="true" id="6aaa5846-3604-4a9c-a5b0-50874d5a9e91" name="Changes" comment="build">
       <change beforePath="$PROJECT_DIR$/google-test/Example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/google-test/Example.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-test/Example.h" beforeDir="false" afterPath="$PROJECT_DIR$/google-test/Example.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google-test/test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/google-test/test/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-test/test/ExampleTests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/google-test/test/ExampleTests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google-test/test/GoogleTestDemo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/google-test/test/GoogleTestDemo.cpp" afterDir="false" />
     </list>
@@ -75,8 +73,23 @@
       <option name="presentableId" value="Default" />
       <updated>1640648439567</updated>
       <workItem from="1640648442285" duration="8000" />
-      <workItem from="1640648482219" duration="432000" />
+      <workItem from="1640648482219" duration="914000" />
     </task>
+    <task id="LOCAL-00001" summary="build">
+      <created>1640649082035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640649082035</updated>
+    </task>
+    <task id="LOCAL-00002" summary="build">
+      <created>1640649094366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640649094366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build" />
+    <option name="LAST_COMMIT_MESSAGE" value="build" />
   </component>
 </project>
